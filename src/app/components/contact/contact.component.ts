@@ -6,11 +6,6 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit {
-  productId: any=0;
-  constructor(private route: ActivatedRoute) { }
-  ngOnInit(): void {
-      this.productId = this.route.snapshot.paramMap.get('id');
-  }
+export class ContactComponent  {
 
 }

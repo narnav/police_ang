@@ -1,1 +1,15 @@
 <p>about works!</p>
+{{ ar | json }}
+<hr />
+
+<div *ngIf="ar.length < 10">
+  not a lot
+
+<div *ngFor="let pro of ar; let i = index; let od = odd">
+  <div [ngStyle]="{ 'background-color': od ? 'red' : 'green' }">
+    {{ i + 1 }} - desc {{ pro.desc }}, {{ pro.price }}
+  </div>
+</div>
+</div>
+
+{{singleProd.desc}}
