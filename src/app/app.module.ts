@@ -8,6 +8,8 @@ import { AboutComponent } from './components/about/about.component';
 import { MyNavComponent } from './components/my-nav/my-nav.component';
 import { WagaComponent } from './components/waga/waga.component';
 import { BagaComponent } from './components/baga/baga.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { BagaComponent } from './components/baga/baga.component';
     AboutComponent,
     MyNavComponent,
     WagaComponent,
-    BagaComponent
+    BagaComponent,
+    NotFoundComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
