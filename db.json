@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "desc": "json-server",
+      "price":5
+    },
+    {
+      "id": 2,
+      "desc": "milk",
+      "price":15
+    }, {
+      "id": 3,
+      "desc": "crem",
+      "price":52
+    }
+
+  ]
+}

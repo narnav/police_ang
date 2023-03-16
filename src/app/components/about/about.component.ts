@@ -10,6 +10,4 @@ import { ProdService } from 'src/app/services/prod.service';
 export class AboutComponent {
   constructor(private prodSrv:ProdService) {}
 
-  ar:Product[] =  this.prodSrv.getAll()
-  singleProd: Product = this.prodSrv.getSingleProd(3)
 }

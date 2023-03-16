@@ -1,27 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../models/product';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProdService {
+  MY_SERVER = 'http://localhost:3500/products';
+  constructor(private myServ: HttpClient) {}
 
-   ar: Product[] = [
-    { desc: 'sugar',price:8 },
-    { desc: 'milk', price: 13 },
-    { desc: 'milkshake', price: 13 },
-    { desc: 'milk', price: 13 },
-    { desc: 'milk', price: 13 },
-    {desc:"m&m",price:9}
-  ];
-
-   getSingleProd=(id:number)=>{
-    return this.ar[id]
+  getProducts(): Observable<Product[]> {
+    return this.myServ.get<Product[]>(this.MY_SERVER)
   }
 
-  getAll=()=>{
-    return this.ar
-  }
-
-  constructor() { }
 }
